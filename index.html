@@ -3,10 +3,154 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#"><img src="img/logo.png" width="137" height="68" alt="Главная"></a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <!-- Main Page -->
+    <main>
+      <div class="poster">
+        <img src="img/background-image.jpg" height="564" width="1200" alt="ibackground-image">
+      </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      <div class="intro">
+        <p>Седона - небольшой городок в аризоне, заслуживающий большего!</p>
+        <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      </div>
 
+      <div class="info-section-first">
+        <div class="description-section">
+          <p class="section-first-title">Настоящий городок</p>
+          <p class="feature-number-first">&mdash;&nbsp;&#8470;&nbsp;1 &mdash;</p>
+          <p class="section-first-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="image-section-first">
+          <img src="img/info-one.jpg" width="800" height="257" alt="info-one">
+        </div>
+      </div>
+
+      <div class="facilities">
+        <div class="facilities-section">
+          <img src="img/logo-accomodation.png" width="75" height="72" class="icon" alt="accomodation">
+          <p class="facilities-title">Жилье</p>
+          <p class="facilities-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="facilities-section">
+          <img src="img/logo-meal.png" width="75" height="72" class="icon" alt="meal">
+          <p class="facilities-title">Еда</p>
+          <p class="facilities-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="facilities-section">
+          <img src="img/logo-souvenir.png" width="75" height="72" class="icon" alt="souvenir">
+          <p class="facilities-title">Сувениры</p>
+          <p class="facilities-description">Не только китайского, но и местного производства!</p>
+        </div>
+      </div>
+
+      <div class="info-section-second">
+        <div class="description-section">
+          <p class="section-second-title">Там есть мост дьявола</p>
+          <p class="feature-number-second">&mdash;&nbsp;&#8470;&nbsp;2 &mdash;</p>
+          <p class="section-second-text">Да, по нему можно пройти если конечно вы осмелитесь</p>
+        </div>
+        <div class="image-section-second">
+          <img src="img/info-two.jpg" width="800" height="256" alt="sedona-img-second">
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact-section">
+          <p class="fact-title">Небольшая площадь</p>
+          <p class="feature-number">&mdash;&nbsp;&#8470;&nbsp;3 &mdash;</p>
+          <p class="fact-description">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="fact-section">
+          <p class="fact-title">Красивая дорога</p>
+          <p class="feature-number">&mdash;&nbsp;&#8470;&nbsp;4 &mdash;</p>
+          <p class="fact-description">Ехать в седону из лас-вегаса совсем не скучно!</p>
+        </div>
+        <div class="fact-section">
+          <p class="fact-title">Мало туристов</p>
+          <p class="feature-number">&mdash;&nbsp;&#8470;&nbsp;5 &mdash;</p>
+          <p class="fact-description">Большинство едет в гранд каньон и толпится там!</p>
+        </div>
+      </div>
+
+      <div class="user-connection">
+        <div class="user-connection-title">
+          <h2 class="interest">Заинтересовались?</h2>
+        </div>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="search">
+          <a href="#" class="hotel-search">Поиск гостиницы в седоне</a>
+        </div>
+      </div>
+
+      <form  class="book-form" action="/echo" method="post">
+        <label for="begin-date">
+          Дата заезда:
+          <input type="text" name="begin-date" id="begin-date">
+        </label>
+          <label for="end-date">
+              Дата выезда:
+          <input type="text" name="end-date" id="end-date">
+          </label>
+        <div class="book-form-row">
+          <div class="input-form">
+            <label for="adult-form">
+                Взрослые:
+            <input type="number" name="adult-form" id="adult-form" step="1" min="0" value="2">
+            </label>
+            <label for="children-form">
+                Дети:
+            <input type="number" name="children-form" id="children-form" step="1" min="0" value="0">
+            </label>
+          </div>
+          </div>
+          <a class="submit-btn" href="#">Найти</a>
+			</form>
+
+      <div class="map">
+        <!-- What to include???-->
+      </div>
+
+    </main>
+    <!-- Footer-->
+    <footer class="main-footer">
+        <section class="footer-contacts">
+          <a href="#">#visitsedona</a>
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="social-btn social-btn-youtube" href="#">YouTube</a>
+        </section>
+        <section class="footer-copyright">
+          <span class="copyrights">Website by</span>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+    </div>
+    </footer>
   </body>
 </html>
